@@ -4,7 +4,7 @@ node [shape=record, style="filled", fontname="Times New Roman", fontsize=10, col
 edge [fontname="Times New Roman", fontsize=9, color="#555555"];
 
 r [label="{ApprovalRoute||STANDARD\lFAST_TRACK\lFINANCE_REVIEW\lDIRECTOR_REVIEW\lSECURITY_REVIEW\l}", fillcolor="#F7FBFF", color="#2F5597"];
-a [label="{ApprovalRouter|+ FINANCE_LIMIT : long = 500000\l|+ route(amount : long, urgent : boolean, risk : RiskLevel, containsPersonalData : boolean) : ApprovalRoute\l}"];
+a [label="{ApprovalRouter|+ FINANCE_LIMIT : long = 500000\l|+ route(amount : long, urgent : boolean, risk : RiskLevel, containsPersonalData : boolean) : ApprovalRoute\l- validateInput(amount : long, risk : RiskLevel) : void\l}"];
 risk [label="{RiskLevel||LOW\lMEDIUM\lHIGH\l}", fillcolor="#F7FBFF", color="#2F5597"];
 
 a -> r [label="returns", style=dashed, arrowhead=open];

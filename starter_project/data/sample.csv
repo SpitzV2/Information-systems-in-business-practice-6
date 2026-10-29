@@ -3,3 +3,12 @@ amount;urgent;risk;personal
 500000;false;LOW;false
 10000;true;HIGH;false
 10000;true;LOW;true
+100000;false;LOW;false
+0;false;LOW;false
+499999;true;LOW;false
+500000;true;LOW;false
+500001;true;LOW;false
+700000;true;MEDIUM;false
+550000;true;HIGH;false
+600000;true;HIGH;true
+499999;false;MEDIUM;false
